@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer {
+            background-color: rgb(118, 214, 214);
+            border: 1px solid;
+            margin: 5%;
+            padding: 15%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer" id="outer1">
+        Outer Part:
+        <span class="inner" id="inner1">
+            Inner
+            <button>inner</button>
+        <span />
+    </div>
+
+
+    <script>
+        var r = document.getElementById('outer1')
+        r.addEventListener('click', () => {
+            alert('Hello,I am Outer')
+        },true)
+
+        var r1 = document.getElementById('inner1')
+        r1.addEventListener('click', () => {
+            alert('Hello,I am Inner')
+        })
+
+
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--  <h1>addEventListener()</h1>
+    <button onclick="backGroundChange()">Click</button>
+
+    <button id="backChange">Click Here</button>
+
+    <script>
+        function backGroundChange(){
+            document.body.style.backgroundColor='lightblue'
+        }
+
+      // var r=document.getElementById('backChange')
+
+    //addEventListener() Having 2 arguments 
+    // 1:event , 2:function
+    document.getElementById('backChange').addEventListener('dblclick',()=>{
+         document.body.style.backgroundColor = 'red'
+       })
+    </script> -->

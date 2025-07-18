@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Find longest word in string [eg: Hey JavaScript is here]
+
+        // function longestWord(variable) {
+        //     let wordSplit = variable.split(' ')
+        //     let newWord = '';
+
+        //     for (let wordNew of wordSplit) {
+        //         if (wordNew.length > newWord.length)
+        //             newWord = wordNew
+
+        //     }
+        //     return newWord;
+
+        // }
+        // console.log(longestWord(prompt('enter')));
+
+       // Uppercase and lower case
+
+        // function uppLow(a, b) {
+        //     let upp = a.toUpperCase()
+        //     console.log(upp);
+
+        //     let low = b.toLowerCase()
+        //     console.log(low);
+
+
+        // }
+        // uppLow(prompt('enter'), prompt('enter'))
+        // console.log();
+
+
+        // //Check a given string is palindrome or not
+
+        function isPalindrome(str) {
+
+            str = str.toLowerCase();//madam//happy
+            let reversed = str.split('').reverse().join('');//madam//yppah
+
+            let result= str === reversed
+           console.log(`String is palindrome or Not:Given string :${str} and reverse:${reversed} and result is : `+result);
+            ;//happy==yppah
+        }
+
+        isPalindrome(prompt('Enter:'))
+        console.log();
+
+
+
+    //     function greet() {
+    //         var line = 'Happy....'
+         
+    //         var line2='Year'
+
+    //         return {a:line,b:line2}
+            
+            
+    //     }
+    //   console.log(typeof(greet()));
+      
+
+    </script>
+</body>
+
+</html>

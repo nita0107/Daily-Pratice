@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>String in JavaScript</h1>
+    <ol>
+        <li>String is a collection of character , special character and number</li>
+        <li>immutable [ we can't change the value]</li>
+        <li>string are written in single quotes , double quotes and template literals</li>
+    </ol>
+
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit aperiam dolorum corrupti incidunt temporibus porro delectus vitae! Laboriosam animi, ullam odio nihil ipsum quis libero exercitationem quod iusto. Excepturi, voluptatibus!</p>
+    <script>
+        // Create string
+
+        // var text1='Qweez'
+        // var text1 = "Qweez"
+        // var text1 = `Qweez`
+
+        // console.log('Text 1 value:', text1);
+
+        // // typeof() method : to check data Type of variable 
+
+        // console.log('DataType of text1:', typeof (text1));
+
+        // // Template Literals 
+        // var a = 10;
+        // var b = 20;
+
+        // var sum = a + b;//30
+
+        // var result = (sum) => {//30
+        //     console.log(`sum:${sum}`);
+
+        //     return sum + 20;//30+20=50
+
+        // }
+        // console.log(result(sum));//30
+
+        // // String Methods :
+
+        // // 1.length
+        // var line = 'Technology'
+        // var len = line.length
+        // console.log('length of Technology:', len);
+
+        // //Note :
+        // // string length start from 1
+        // // string index start from 0
+
+        // // 2.toupperCase()
+        // // 3.tolowerCase()
+
+        // console.log('upperCase:', line.toUpperCase());
+        // console.log('lowerCase:',line.toLowerCase());
+        
+
+        // //4.chartAt(): return character of specified number 
+        // console.log('l character at:',line.charAt(1));
+
+        // // 5.indexof(): return number of specified character 
+        // console.log('1 index of:',line.indexOf("e"));
+
+        // //6. lastIndexof(): check index from last to first
+        // var line1 = 'Technology Here'
+        // console.log('1 index of:', line1.lastIndexOf('e'));
+
+
+        // // Find length of variable by using function [pass value as an argument]
+        
+        // //eg: Here is JavaScript
+
+        // var lineLength=function(line){
+        //     console.log('Length:',line.length);
+        // }
+
+        // lineLength("Here is JavaScript")
+
+        // // 7.includes() : check if the string contain the given substring
+
+        // let line2='Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit aperiam dolorum corrupti incidunt temporibus porro delectus vitae! Laboriosam animi, ullam odio nihil ipsum quis libero exercitationem quod iusto. Excepturi, voluptatibus!'
+
+        // var r=line2.includes('Dolor')
+        // console.log('value is include yes/no:',r);
+
+        // // 8.startWith()
+        // // 9.endsWith()
+        // //check how the string start or ends
+
+        // console.log('Start:',line2.startsWith('Lorem'));
+        // console.log('end:', line2.endsWith('ipsum'));
+
+        console.log('*****************************');
+        
+        // 10. Slice: cut a specific part of portion
+        // const value='Technology'
+        // console.log(value);
+        // console.log(value.slice(1));
+        
+        // console.log(value.slice(2,7));
+
+        // replace(old,new): replace a specif part
+        // replaceAll(old,new)
+
+        var a='    Hello, Welcome Welcome here all'
+        console.log(typeof(a));
+
+        console.log(a.replace('Welcome','EveryOne'));
+        console.log(a.replaceAll('Welcome', 'EveryOne'));
+        
+        // trim: remove whitespaces from string
+        // trimStart(), trimEnd()
+        console.log(a.trimEnd());
+
+
+        // split() : convert string into array
+
+        var b='1234'
+        console.log(b);
+        console.log(b.split(''));
+        console.log(b.slice(1,4));
+        
+
+        // reverse a string
+
+        let line='Technology'
+      
+        let rev=line.split('').reverse().join('')
+        console.log(rev);
+        
+
+        // reverse a string by using function
+
+        var revFun=(para)=>{
+           var result= para.split('').reverse().join('')
+            console.log(result);  
+        }
+
+        revFun('Hello JavaScript')
+        
+        // repeat(count)
+        var greet='Hey '
+        console.log(greet.repeat(5));
+
+        //concat() : to merge 
+        console.log(greet.concat('Qweez'));
+        
+
+
+        /* 
+        Notes:
+
+        1.length: length odf string
+        2.toupperCase, tolowerCase: string convert in uppercase and lower case
+        3.charAt(): return a character using index
+        4.indexof():
+        5.concat():
+        6.split():
+        7.splice():
+        8.reverse():
+        9.join():
+        10.includes():
+        11.trim():[trimStart,trimEnd]
+        12.startWith()
+        13.endWith()
+        14.repeat()
+        15.replace()
+        16.lastindexof()
+        
+        
+        
+        
+        */
+        
+        
+
+        
+        
+        
+        
+
+
+        
+
+
+        
+
+
+        
+
+        
+
+
+    </script>
+    <!-- 
+    // string methods:
+    
+    // 1.charAt(): Returns the character at a specified index in a string.
+    
+    // 2.charCodeAt(): Returns the Unicode of the character at a specified index.
+    
+    // 3.toUpperCase(): Converts a string to uppercase.
+    
+    // 4.toLowerCase(): Converts a string to lowercase.
+    
+    // 5.slice(): Extracts a section of a string and returns it as a new string.
+    
+    // 6.substring(): Returns a part of a string between two specified indices(doesn't support negative indexes).
+    
+    // 7.replace(): Replaces the first occurrence of a substring with a new string.
+    
+    // 8.replaceAll(): Replaces all occurrences of a substring with a new string.
+    
+    // 9.split(): Splits a string into an array of substrings based on a specified separator. -->
+
+
+</body>
+
+</html>

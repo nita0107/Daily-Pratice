@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Function in JS</h1>
+
+    <script>
+        // function in js
+        // function are method in js
+        // use : reusable  
+        // syntax : function functionName(){code.........}
+        //calling function: functionName()
+
+        // example: print line : JS is here...
+
+        // function msg(){
+        //     console.log('JavaScript is here');   
+        // }
+
+        // msg()
+
+
+        // example: print addition of 2 variables
+        // function add(){
+        //     var a=11;
+        //     var b=22
+        //     console.log('Addition:',a+b);
+
+        // }
+        // add()
+
+        // example: Find a number is positive or not
+
+        // function checkPos(){
+        //     var num=-20
+        //     if(num>0){
+        //         console.log('Positive number',num);
+        //     }
+        //     else{
+        //         console.log('negatives number', num);
+        //     }
+        // }
+
+        // checkPos()
+
+        //find number is even or odd
+        // function checkEvenOdd() {
+        //     var n = parseInt(prompt('enter:'))
+        //     if (n % 2 === 0) {
+        //         console.log('even')
+
+        //     }
+        //     else {
+        //         console.log('odd');
+
+        //     }
+        // }
+
+        // checkEvenOdd()
+
+        // parameters and arguments 
+        // parameters : pass value in function 
+        // arguments : pass value to an parameters 
+
+        // syntax : function fName(parameters){codee.......}
+        // call : fName(arguments)
+
+        // function evenOdd(num){//108765
+        //     if(num%2===0){//108765%2===0
+        //         console.log('even',num);//108765
+
+        //     }
+        //     else{
+        //         console.log('odd',num);//108765
+
+        //     }
+
+        // }
+        // evenOdd(108765)//108765
+
+
+        // function add(b,a){
+        //     console.log('sum:',a+b,'a:',a,'b:',b);
+
+
+        // }
+        // add(12,15)
+
+        var a = 20;
+        console.log(a);
+
+
+
+        function checkPrime(num) {
+            if (num < 2) return `${num} prime number not negative ,zero or one`
+
+            for (let i = 2; i < num; i++) {//3<5
+                if (num % i === 0) {//5%3===0
+                    return `${num} is not a prime`
+                }
+            }
+            return `${num} is prime`
+        }
+
+        //console.log(checkPrime(parseFloat(prompt('Enter:'))));
+
+        //find factorial of a number 
+        //6=1*2*3*4*5*6 
+
+        function checkFactorial(n) {
+            if (n <= 0) return 'Invalid number'
+            if (n === 1) return '1'
+            let fact = 1
+            for (let j = 2; j <= n; j++) {
+                fact *= j//fact=fact*j
+
+            }
+            return fact
+
+        }
+
+        console.log(checkFactorial(parseInt(prompt('Enter:'))));
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Object in JavaScript</h1>
+    <p>object is a entity [key : value pair]</p>
+    <p>write in curly braces</p>
+    <p>Define properties</p>
+
+    <script>
+        // var NewObject={Name:'Qwwez',SurName:'Technology',pinCode:1234}
+        // console.log(NewObject);
+
+        // // find a specific object from variable
+        // console.log(NewObject.pinCode);
+
+        // // embedded object
+        // var embeddedObject={Address:{plotNo:'2A',LandMark:'Garden',city:'Kolhapur'}}
+
+        // console.log('Address:s',embeddedObject.Address.LandMark);
+        
+        var line='Technology'
+        console.log(line,'DataType:',typeof(line));
+        
+        // converting string to the object
+        var result=new String(line)
+        console.log(result,'DatType:',typeof(result));
+        
+        
+        var num=1234
+        console.log(num,'DataType:',typeof(num));
+
+        // converting number to the object
+        let result2=new Number(num)
+        console.log(result2, 'DataType:', typeof (result2));
+
+        result.IT='JAVA Lang'
+        console.log(result.IT);
+
+        // create a new object
+        var car=new Object()
+        car.Color='Red';
+        car.model='aCD34';
+        car.year=2001
+
+        console.log(car.Color);
+        
+        
+
+        
+        
+
+    </script>
+</body>
+</html>

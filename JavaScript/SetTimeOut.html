@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetTime Out </title>
+    <style>
+        .demo {
+            border: 1px solid;
+            margin: 5%;
+            padding: 10%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>setTimeout() method</h1>
+    <div class="demo" id="box">
+        <h1>javaScript</h1>
+
+    </div>
+
+    <script>
+        // setTimeout()
+        //use :is used to execute a function once after a specified delay in milliseconds.
+        // syntax : setTimeout(function,milliseconds)
+        // 1.argument : is function
+        //2. argument : is milliseconds[1 sec=1000]
+
+        //    setTimeout(()=>{
+        //     console.log('Hello I am javaScript');
+        //    },3000)
+
+
+        // setTimeout(()=>{
+        //     document.getElementById('box').style.backgroundColor = 'lightblue'
+        // },5000)
+
+
+        // var r1=setTimeout(()=>{
+        //     alert('Javascript Here')
+
+        // },4000)
+
+        // clearTimeout()
+        //use: to stop setTimeout 
+        // clearTimeout(r1)
+
+
+        // setInterval()
+        // use : is used to repeatedly execute a function
+        // setInterval(function,milliseconds)
+        // 1.argument : is function
+        //2. argument : is milliseconds[1 sec=1000]
+
+
+        var result = setInterval(function () {
+            document.writeln('Heyyy')
+
+        }, 1000)
+
+        // clearInterval()
+        //use: to stop setInterval()
+
+        setInterval(() => {
+            clearInterval(result)
+        }, 12000)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

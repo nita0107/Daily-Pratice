@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            border: 1px solid;
+            padding: 3%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Form Events</h1>
+    <div class="formOutline" onsubmit="formSubmit()">
+        <form action="">
+            <label for="fn">First Name:</label>
+            <input type="text" value="" id="fn" onfocus="formFocus(this)" onblur="formBlur(this)"
+                oninput="formInput(this)" ><br><br>
+
+            <label for="">Email:</label>
+            <input type="email" onfocus="formFocus(this)" onchange="formChange(this)"><br><br>
+
+            <label for="">DropDown List</label>
+            <select name="" id="" oninput="formInput(this)">
+                <option value="MERN,MEAN">WD</option>
+                <option value="oop,SQL">JD</option>
+                <option value="Django,SQL">PD</option>
+            </select><br><br>
+
+            <label for="">Feedback</label>
+            <textarea name="" id="" onselect="formSelect()"></textarea>
+        
+            <br><br>
+            <input type="submit">
+            <input type="reset">
+        </form>
+
+        <h5>Result Display here</h5>
+        <div class="box" id="result"></div>
+
+
+
+
+    </div>
+
+
+    <script>
+        // this: Global variable [inbuilt variable]
+
+        function formFocus(parameter) {
+            // document.getElementById('fn').style.backgroundColor='yellow'
+
+            parameter.style.backgroundColor = 'lightblue'
+        }
+
+        function formBlur(parameter) {
+            parameter.style.backgroundColor = ''
+        }
+
+        function formInput(para) {
+            var a = para.value
+            document.getElementById('result').innerHTML = 'Option: ' + a
+
+        }
+
+        function formChange(ele){
+        var email=ele.value
+        document.getElementById('result').innerHTML = 'email: ' + email
+        }
+
+        function formSelect(){
+            alert('This is not allowed...')
+        }
+
+        function formSubmit(){
+          var name= document.getElementById('fn').value
+            alert('Form is successfully submitted : '+name)
+        }
+
+
+    </script>
+</body>
+
+</html>

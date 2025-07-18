@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p></p>
+    <script>
+        // Task:
+        //     1. Print One Para after 3 seconds
+        //     2. Print 1 to 5 numbers every 2 seconds and stop that number at 5
+        //     3. Display a countdown that start from 10 and end on 0, every one seconds 
+
+//1
+       var r= setTimeout(()=>{
+            console.log('Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sed omnis possimus neque eaque asperiores corrupti, aliquid quam ipsum dolorem itaque eveniet sapiente, fugiat perferendis totam expedita! Nulla, reiciendis sunt!');
+    
+        },3000)
+        // clearTimeout(r)
+
+
+        // 2
+         var num=0
+        var main=setInterval(()=>{
+            num++;
+            console.log('result:',num);
+            if(num===5){
+                clearInterval(main)
+            }
+        },2000)
+
+        
+
+        var start=11;
+     var r1=setInterval(function(){
+            start--;
+            console.log('Time:',start);
+            if(start<=0){
+                clearInterval(r1)
+            }
+            
+
+        },1000)
+    </script>
+</body>
+</html>

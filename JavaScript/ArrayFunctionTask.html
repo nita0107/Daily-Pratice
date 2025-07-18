@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Array questions</h1>
+    <script>
+        //1.Write a function counts the frequency of each element in an array and returns it as an object
+        // code:
+
+        //     const arr=['car','bike','bike','Auto','car','bus']
+
+        //     function countFrequency(element){
+        //         console.log(element);
+
+        //         const frequency={}
+        //         element.forEach(element => {
+        //             if(frequency[element]){
+        //                 frequency[element]+=1
+        //             }
+        //             else{
+        //                 frequency[element]=1
+        //             }
+        //         });
+        //         return frequency;
+
+        //     }
+
+        //    console.log(countFrequency(arr));
+
+
+
+        //2.remove duplicates from an array
+        // const arr1 = ['car', 'bike', 'bike', 'Auto', 'car', 'bus']
+
+        // Set(): Method => return not an array
+        // set method is used to remove duplicate value
+
+        // spread operator (...): create a new array
+
+        // function removeDuplicates(element){
+        //     return [...new Set(element)]
+        // }
+        // var result=removeDuplicates(arr1)
+        // console.log(result);
+
+        //3.Find longest word from an array
+
+        //reduce(): callback function of each element
+        // callback function : calling one function as an argument in another function is known as callback function
+
+        function functionName() {//parameters
+            //code
+        }
+        //call function
+        functionName()//arguments
+
+        function greet(anotherFunction) {
+            console.log('Hello');
+            anotherFunction()
+
+        }
+
+        greet(CompInfo)
+
+        function CompInfo() {
+            console.log('Qweez Technology');
+
+        }
+        // CompInfo()
+
+
+        var arr2 = ['cat', 'dog', 'Elephant', 'Tiger', 'Lion']
+        console.log('array is:', arr2);
+
+
+        function longEleFArray(eachElement) {
+            return eachElement.reduce(
+                (longW, currentW) => {
+                    return currentW.length > longW.length ? currentW : longW
+
+                }
+            )
+
+        }
+
+        console.log(longEleFArray(arr2));
+
+
+
+
+
+    </script>
+</body>
+
+</html>

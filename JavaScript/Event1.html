@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .demo {
+            border: 1px solid;
+            margin: 5%;
+            padding: 15%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="demo" id="box"></div>
+    <button onmouseleave="boxColor()">Click</button>
+
+
+    <script>
+        function boxColor() {
+            // document.getElementById('box').style.backgroundColor='red'
+
+            let box = document.getElementById('box')
+            //let result= box.style.backgroundColor
+            //    if(result==='white'){
+            //     box.style.backgroundColor='red'
+            //    }
+            //    else{
+            //      box.style.backgroundColor ='white'
+
+            //    }
+            box.style.backgroundColor = box.style.backgroundColor === '' ? 'red' : ''
+
+        }
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <button ondblclick="userClick()">double Click</button><br><br>
+    <button onclick="userClick()">hello click here</button><br><br>
+    <button onmouseover="userClick()">mouseOver</button><br><br>
+    <button onkeypress="userClick()">Key</button><br><br>
+
+    <script>
+       var userClick=function(){
+        alert('Hello I am Events')
+
+        }
+    </script> -->
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<!--  <h1>Refresh:</h1>
+    <h5>Function : method => ()</h5>
+    <!-- function functionName(para){code.......} 
+        call: functionName(arguments)
+        
+       const function1= (para)=>{code.....}
+       function1()
+
+      const function2= function(para){code........}
+      function2()
+
+      parameters, arguments 
+    -->
+<!-- <p id="demo"></p>
+<script>
+    var result = (a) => {
+        //console.log(a);
+
+
+        let name = 'Qweez'
+        console.log(name);
+        document.getElementById('demo').innerHTML = `Company Name:${name} ${a}`
+    }
+
+    result('Technology')
+</script> -->

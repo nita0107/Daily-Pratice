@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Type </title>
+</head>
+
+<body>
+    <h1>Data Types</h1>
+    <h1>Pass value from js to html</h1>
+
+    <p id="line"><b>Hello : name</b></p>
+    
+
+    <h4 class="line2">Location : Write</h4>
+    <h5 class="line2">Location: write</h5>
+
+    <ol>
+        <li>.innerText</li>
+        <li>.innerHtml</li>
+    </ol>
+
+    <p>Notes:
+        <li>Js doest not support class attribute</li>
+        <li>To access html class attribute in JS use ClassName instead of class</li>
+        <li>className in JS is define by its index </li>
+        <li>index is start from 0</li>
+    </p>
+
+    <script>
+        // 5 methods:
+        // writeln() method
+        document.writeln('Qweez Technology')
+
+        // alert() method
+        // alert('Heyy Qweezz...........')
+
+        // id access : getElementById()
+        var name = 'Nita'
+        document.getElementById('line').innerText='Hello:'+name
+
+        //class access : getElementByClass()
+        let loc='Kolhapur'
+        document.getElementsByClassName('line2')[1].innerHTML=loc
+
+        // take input from user
+        // prompt() method
+
+        var des=prompt('Enter description')
+        document.writeln(des)
+        console.log(des);
+        
+        
+    </script>
+
+</body>
+
+</html>

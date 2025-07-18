@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional statement</title>
+</head>
+
+<body>
+    <h1>Conditional statement</h1>
+    <script>
+        // if statement 
+        // use : if a condition is true then script is reflect
+        // syntax : if(condition){true.....................}
+
+        // example:
+        // const personAge=parseInt(prompt('enter a age:'))
+        // if(personAge>21){
+        //     console.log('Here is URL:https://google.com');
+        // }
+
+        // if...else statement
+        // use: if one condition is true and other one is value
+        // syntax : if(condition){true....}else{false............}
+
+        // let Age= parseInt(prompt('enter a age:'))
+        // if(Age>18){
+        //     console.log('Voter access');
+
+        // }
+        // else{
+        //     console.log('No voter access');
+
+        // }
+
+
+        // var checkNumber = parseFloat(prompt('Enter a number: '))
+        // if (checkNumber % 2 === 0) {
+        //     console.log('Even ', checkNumber);
+        //     document.writeln('even')
+        // }
+        // else {
+        //     console.log('odd', checkNumber);
+        //     document.writeln('Here is a number:odd', checkNumber)
+
+        // }
+
+        //if..else .. if..else statement/ else if lader / nested if else
+        // use : Check many condition
+        // syntax : if(condition1)
+        //              {code......}
+        //          else if(condition2)
+        //              {code.................}
+        //.............................
+        //      else{code....................}
+
+        // var person=parseInt(prompt('enter:'))
+
+        // if(person<18){
+        //     console.log('Younger person ');   
+        // }
+        // else if(person>18 && person<40){
+        //     console.log('Mid-older person');
+
+        // }
+        // else if (person > 41 && person < 90) {
+        //     console.log('older person');
+
+        // }
+        // else{
+        //     console.log('Person is dead');
+
+        // }
+        // switch statement
+        // use : if you want to select one of many blocks of code to be executed.
+        // break :break the loop and continue executing the code that follows after the loop (if any).
+
+        // syntax :switch(condition/value){
+        //                  case 1:code.......
+        //                   case 1:code....... }
+
+        // program
+        // var value=parseInt(prompt('enter:'))
+
+        // switch (value) {
+        //     case 1: console.log('Monday');break
+        //     case 2: console.log('Tue');break
+        //     case 3: console.log('Wed');break
+        //     case 4: console.log('Thu');break
+        //     case 5: console.log('Fri');break
+        //     default: console.log('Holiday.......');
+
+
+        // }
+
+
+        // program
+        // var num1=10
+        // var num2=5
+
+        // let useOperator=prompt("enter:")
+
+        // switch(useOperator){
+        //     case '+': console.log('Add:',num1+num2);break
+        //     case '-': console.log('Sub:', num1 - num2);break
+        //     case '*': console.log('Mul:', num1 * num2);break
+        //     case '/': console.log('div:', num1 / num2);break
+        //     default : console.log('No this operator is not found');
+
+        // }
+
+        // 4.Write a program to calculate the grade based on the marks obtained in an exam:
+        //     Marks >= 90: Grade A
+        //     Marks >= 80 and < 90: Grade B
+        //     Marks >= 70 and < 80: Grade C
+        //     Marks >= 60 and < 70: Grade D
+        //     Marks < 60: Grade F
+
+        //     Use: switch statement
+
+        // var marks = parseFloat(prompt('enter :'))
+
+        // switch (true) {
+        //     case (marks >= 90): console.log('Grade A');
+        //         break;
+        //     case (marks >= 80 && marks < 90): console.log('Grade B');
+        //         break;
+
+        //     case (marks >= 70 && marks < 80): console.log('Grade C');
+        //         break;
+
+        //     default:
+        //         console.log('Fail');
+        //         break;
+        // }
+
+
+
+
+        // if(marks>=90){
+        //     console.log('Grade A');
+        // }
+        // else if(marks>=80 && marks<90){
+        //     console.log('Grade B');
+        // }
+        // else if (marks >= 70 && marks < 80) {
+        //     console.log('Grade C');
+        // }
+        // else{
+        //     console.log('Fail');
+        // }
+
+        // Task: Find out the year is leap year or not
+
+         const year=parseInt(prompt('Enter year:'))
+
+         if(year % 4===0 || year %400===0) {
+            console.log('Leap year...');
+            
+            
+         } else {
+            console.log('Not a Leap Year...');
+            
+            
+         }
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

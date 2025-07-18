@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Array in JavaSCript</h1>
+    <ol>
+        <li>Array is set of collection of different data Type</li>
+        <li>Array syntax : [......data Type]</li>
+        <li>An array is a special data structure in JavaScript used to store a collection of items. These items can be
+            of any type (numbers, strings, objects, etc.)
+        </li>
+
+        <li>Array index start from zero</li>
+        <li>array length count start from one </li>
+    </ol>
+    <script>
+        // // string Array
+        // const arrayString = ['abc', "xyz",, `Tech`]
+        // console.log(arrayString);
+
+        // //number array
+        // const arrayNumber = [1, 1.2, 123, 12.34, 12345]
+        // console.log(arrayNumber);
+
+        // // object array
+        // const objectArray = [{ a: 12, b: '20' }, { name: 'Qweez', Loc: 'Kolhapur' }]
+        // console.log(objectArray);
+
+        // //empty array
+        // const arrayEmpty=[]
+        // console.log(arrayEmpty);
+
+        // // mixed array
+        // const mixArray=['abc', "xyz", 123, 12.34, { a: 12, b: '20' }, [],['a','b']]
+
+        // console.log(mixArray);
+
+
+
+        // Array Methods 
+        // var array=['Qweez','Technology','Kolhapur',416001]
+        // console.log(array);
+
+        //1 // push: add value at the end of array
+        // var push=array.push({landmark:'near garden'})
+        // console.log(array);
+
+        //2 // unshift" add value at the start
+        // var unshift=array.unshift(1234567890)
+        // console.log(array);
+
+        //3 //shift():remove first value from the array
+        // var shift=array.shift()
+        // console.log(array);
+
+        //4 // pop(): remove value from the bottom
+        // var pop=array.pop()
+        // console.log(array);
+
+        //5 // concat:merge an array
+        // var concat=array.concat('Web Dev','Java Dev')
+        // console.log(concat);
+
+
+
+        // //6 map():creates a new array by applying a function to each element
+        // const arr1 = [1, 'a', "@#$", 1234]
+        // // add 10 value
+        // // var result1=arr1.map((value)=>{return value+10})
+        // var result1 = arr1.map((value) => value + 20)
+        // console.log(result1);
+
+        // //7.filter:create a new array with element that pass a condition
+        // var arr2 = [12, 323, 545, 12, 2, -54, 32, -1928, 83]
+        // var result2 = arr2.filter((num) => num % 2 !== 0)
+        // var result3 = arr2.filter((n) => n <= 0)
+        // console.log(result3);
+        // console.log(result2);
+
+        // //8.  find:returns the first element that matches a condition
+        // var arr3 = ['Q', 'T', 'k']
+        // var result4 = arr3.find(word => word.toLowerCase() === 't')
+        // console.log(result4);
+
+        // //9. includes: check is an array contains a specific value
+        // const result5=arr3.includes('K')
+        // console.log(result5);
+
+
+        // 10.sort : sorts the element of an array [ascending , descending numbers and write in correct alphabetical order]
+
+
+        // B,N,A,P=sort(A,B,N,P)
+        // 12,2878,-13,0,3,56=sort(-13,0,3,12,56,2878)//ascending
+
+
+        // var char = ['s', 'e', 'a', 'w', 'q', 'n']
+
+        // console.log(char);
+
+        // var result6 = char.sort()
+        // console.log(result6);
+
+        // var num = [2, 2878, -13, 0, 3, 56]
+        // console.log('number:', num);
+        // console.log('ascending:', num.sort((past, resent) => past - resent));
+        // console.log('descending:', num.sort((past, resent) => resent - past));
+
+        // // 11.reverse(): reverse the element of an array
+        // console.log('reverse an array', num.reverse());
+
+
+        //   Task: create one array an filter out even number and then display in ascending order[function]
+
+        // function filterOrder(para) {
+        //     var evenNumber = para.filter((n) => n % 2 === 0)
+
+        //     var ascending = evenNumber.sort((p, r) => r - p)
+
+        //     return { EvenNumber: evenNumber, order: ascending }
+
+
+        // }
+
+        // console.log(filterOrder([2, 2878, -13, 0, 3, 56]));
+
+
+
+        // indexOf():return the first index of a value or -1 is not found
+        var string= ['abc', "xyz", `Tech`]
+        console.log(string);
+
+        console.log('index of:',string.indexOf('tech'));
+
+        // slice:create a new array by part
+        console.log('slice:',string.slice(1,2));
+
+        // interview question: for and forEach difference --------------------------------
+
+        // forEach(): runs a function for each element, no return value
+        var num=[1,2,3,4,5,6,7,8,9,10]
+        console.log(num);
+        var result11=num.forEach(n=>console.log(n*2))
+        
+
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

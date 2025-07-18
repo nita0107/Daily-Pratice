@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Regular Expression</h1>
+
+    <script>
+        // const word='cat dog'
+        // console.log(word);
+        // console.log('length:',word.length);
+
+        // const line = 'Hello,I am From Kolhapur, Pincode:41600'
+        // console.log('line:', line);
+
+        // console.log('length:', line.length);
+
+        // // syntax : /pattern/modifier
+
+        // // \w: word character 
+        // var wordCharacter = /\w/g
+        // console.log(line.match(wordCharacter));
+
+
+        // // \W: special character and whitespaces
+
+        // var wordCharacter = /\W/g
+        // console.log(line.match(wordCharacter));
+
+        // //\d:digits
+        // var digitRegExp = /\d/g
+        // console.log('Number:', line.match(digitRegExp));
+
+
+        // //\D: non digits
+        // var digitRegExp = /\D/g
+        // console.log('Number:', line.match(digitRegExp));
+
+        // searching Kolhapur word
+
+        // console.log('search:', line.match(/kolhapur/i));
+
+        // console.log('search:', line.match(/kolhapur/gi));
+
+        // var line2 = 'Hello,I am from Pune and Pune.Hello,He is here'
+
+        // console.log('replace:', line2.replace(/pune/gi, 'Kolhapur'));
+
+
+        // Task:
+        // This is my office Phone No: 123456789, and my pincode is: 1234
+
+        // const str='This is my office Phone No: 123456789, and my pincode is: 1234'
+
+        // const dsn=/\w/g
+        // const result1=str.match(dsn)
+        // console.log(result1);
+
+        // const join=result1.join('')
+        // console.log(join);
+
+        // const removeNum=join.match(/\D/g)
+        // console.log(removeNum);
+
+        // const lengthOfChar=removeNum.length
+        // console.log(lengthOfChar);
+
+
+        const str = 'THIS is my office Phone No: 123456789, and my pincode is: 1234'
+
+        const searchLowCaseStart = /\b[a-z]/g
+        console.log(str.match(searchLowCaseStart));
+
+        const searchLowCaseEnd = /[a-z]\b/g
+        console.log(str.match(searchLowCaseEnd));
+
+        const fullWord = /\b[a-z]+\b/g
+        console.log(str.match(fullWord));
+
+        const searchUppCaseStart = /\b[A-Z]+\b/g
+        console.log(str.match(searchUppCaseStart));
+
+        const digit=/\d{5}/g
+        console.log(str.match(digit));
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controlling Statement</title>
+    <style>
+        .style{
+            border: 1px solid;
+            margin: 5%;
+            padding: 5%;
+        }
+    </style>
+</head>
+
+<body>
+
+  <!--   <div class="style" id="number"> </div> -->
+ <!--     <div id="demo"></div> -->
+      <pre id="demo"></pre>
+
+    <script>
+
+        
+            // Draw pattern
+            //     [using for and while loop]
+
+            // *
+            // * *
+            // * * *
+            // * * * *
+            // * * * * *
+            // fetching id
+            // let r=''
+            // for(let i=1;i<=5;i++){
+            //     //      1,  1<=2
+            //     for(let j=1;j<=i;j++){
+            //         // document.writeln('*')
+            //         r+='*'+' '
+            //         document.getElementById('demo').innerHTML=r
+            //     }
+            //     // document.writeln('<br>')
+            //     r+='\n'
+                
+            // }
+
+            //using document writeln
+                // for (let i = 1; i <= 5; i++) {
+                //     for (let j = 1; j <= i; j++) {
+                //         document.writeln('*')
+                //     }
+                //    document.writeln('<br>')
+                // }
+
+
+
+              
+                // do{
+                //   console.log(a)
+                //   a++
+                    
+                // }while(a<=1)
+/* .......................................... */
+                // do{
+                //     if(a%2===0){
+                //         console.log('even:',a);
+                        
+                //     }
+                //     a++
+                    
+                // }while(a<20)
+                /* .......................................... */
+                let a = 1
+                 do{
+                  if(a===6){
+                      a++
+                    continue
+                  }
+                  if(a%2===0){
+                    console.log(a);
+                    
+                  }
+                  a++
+                    
+                }while(a<20)
+                console.log('**********');
+                
+                 /* .......................................... */
+                 let b=1
+                 do{
+                    if(b%2==0){
+                        if(b===8){
+                            break
+                        }
+                        console.log(b); 
+                    }
+                    b++
+                 }while(b<10)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // for - loops through a block of code a specified number of times 
+        // syntax : for(var=startvalue;var<=endvalue;var=var+increment){ code...............}
+
+        // program
+        // print 11 to 21 number
+
+        //  var start=11
+
+        //  var emptyValue=''
+
+        // for(start;start<21;start++){
+        //     emptyValue+=start+' ' // emptyValue= emptyVale+start//ev='12'+13
+        //     console.log('Here:',start);
+        //     document.writeln(start)
+        //     document.getElementById('number').innerHTML=emptyValue
+        //     //111213
+    
+        // }
+
+        // for(let s=11;s<=21;s++){
+        //     console.log(s);
+            
+        // }
+
+        // find odd number from 11 to 21
+
+        // for(var n=11;n<22;n++){
+        //     if(n%2!==0){
+        //         console.log('odd number:',n);
+                
+        //     }
+        // }
+
+        // Print table of given value and stop at 7th place
+
+        // The break command will break the loop and continue executing the code that follows after the loop (ifany).
+
+        // The continue command will break the current loop and continue with the next value.
+
+        // var i=1
+        // var tableNumber=parseInt(prompt('enter:'))
+        // for(i;i<=10;i++){
+        //     if(i===7){
+        //         continue;
+        //     }
+        //     console.log(tableNumber*i);
+            
+        // }
+
+        // console.log('Hello');
+        // console.log('Heyy');
+        
+
+// while loop
+// use:
+//syntax : while(condition){code............}
+
+// program: print 1 to 10
+
+// for(var i=1;i<=10;i++){
+//     console.log(i);
+    
+// }
+// let i=1
+// while (i<=10) {
+//     console.log(i);
+//     i++
+    
+    
+// }
+
+// // define even number  from 102 to 130[while loop]
+// let n=20
+// while(n>=0){//102<=130
+//     if(n%2===0){//102%2===0
+//         console.log('even',n); //102 
+//         // n++ //103 
+//     }
+//     n--
+
+// }
+
+// console.log('script');
+
+
+
+
+
+
+
+
+
+// for(let n=102;n<=130;n++){
+//     if(n%2===0){
+//         console.log('even:',n);
+        
+//     }
+
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

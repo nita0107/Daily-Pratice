@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .boxStyle{
+            border: 1px solid;
+            padding: 15%;
+            margin: 5%;
+        }
+        .btn{
+            border: 1px solid;  
+            padding: 2%;  
+            background-color: rgb(115, 180, 158);  
+            border-radius: 15%; 
+            cursor: default; 
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Event</h1>
+    <h5>Click event</h5>
+    <p>The change in the state of an object is known as event </p>
+    
+    <div class="boxStyle" id="box"></div>
+    <button onclick="r()">Click</button><br><br>
+    <span class="btn">Click Custom</span>
+
+    <script>
+      var r= ()=>{
+        setTimeout(function color() {
+               document.getElementById('box').style.backgroundColor = 'yellow'
+
+           }, 3000)
+       }
+
+       console.log(r);
+       
+    </script>
+</body>
+</html>
+
+
+<!-- 
+
+function fName(){code..............}
+
+fName()
+
+
+()=>{
+}
+-->

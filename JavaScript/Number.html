@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Number in JavaScript</h1>
+    <script>
+        // var n=1234;
+        // console.log(n);
+        // console.log(typeof(n));
+
+        // var n1='1234'
+        // console.log(n1);
+        // console.log(typeof(n1));
+
+        // var num1=12e3
+        // console.log(num1,typeof(num1));
+
+        // var newNum=new Number(num1)
+        // console.log(newNum,typeof(newNum));
+
+
+        // console.log(1/0);
+        // console.log(1/Infinity);
+        // console.log(1/'n');
+
+
+        // var a=123.4567
+        // console.log(parseFloat(a));
+
+        var a = 123.787;
+        var b = 'Hello'
+        console.log(a, typeof (a));
+
+        //toString() Returns a number as a string
+        var result = a.toString()
+        console.log(result, typeof (a));
+
+        var rev = result.split('').reverse().join('')
+        console.log(rev);
+
+        //toExponential():Returns a number written in exponential notation
+
+        var resul2 = a.toExponential()
+        console.log(resul2);
+
+
+        //toFixed():Returns a number written with a number of decimals
+        var result3 = a.toFixed()
+        console.log(result3);
+
+        //toPrecision:Returns a number written with a specified length
+        var result4 = a.toPrecision()
+        console.log('result4:', typeof (result4), result4);
+
+        // valueOf()
+
+
+
+
+    </script>
+</body>
+
+</html>
